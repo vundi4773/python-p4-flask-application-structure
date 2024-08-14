@@ -10,7 +10,7 @@ def index():
 
 @app.route('/<string:username>')
 def user(username):
-    return f'<h1><ol><li>Profile for {username}</li></ol></h1>'
+    return f'<h1>Profile for {username}</h1>'
 
 if __name__ == '__main__':
     app.run(port=5555, debug=True)
